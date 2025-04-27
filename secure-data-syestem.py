@@ -116,7 +116,7 @@ elif choice == "Login":
                     st.stop()
 
         # === data store section ===
-     elif choice == "Store Data":
+        elif choice == "Store Data":
             if not st.session_state.authenticated_user:
                 st.warning("🔐 Please login first.")
             else:
