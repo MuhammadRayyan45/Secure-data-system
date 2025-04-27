@@ -146,7 +146,7 @@ elif choice == "Retrieve Data":
         if not user_data:
             st.info("No Data Found!")
         else:
-            st.write("Encryted Data Enteries:")
+            st.write("Encrypted Data Enteries:")
             for i, item in enumerate(user_data):
                 st.code(item,language="text")
 
