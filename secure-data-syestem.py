@@ -146,12 +146,12 @@ elif choice == "Retrieve Data":
         if not user_data:
             st.info("No Data Found!")
         else:
-            st.write("Encrypted Data Enteries:")
+            st.write("Encryted Data Enteries:")
             for i, item in enumerate(user_data):
                 st.code(item,language="text")
 
             encrypted_input = st.text_area("Enter Encrypted Text")
-            passkey = st.text_input("Enter Passkey T Decrypt", type="password")
+            passkey = st.text_input("Enter Passkey to Decrypt", type="password")
 
             if st.button("Decrypt"):
                 result = decrypt_text(encrypted_input, passkey)
