@@ -129,7 +129,7 @@ elif choice == "Login":
                         encrypted = encrypt_text(data, passkey)
                         stored_data[st.session_state.authenticated_user]["data"].append(encrypted)
                         save_data(stored_data)
-                        st.success("✅ Data encrypted and save sucessfully!")
+                        st.success("✅ Data encrypted and save sucessfully.!")
 
                     else:
                         st.error("Ali fields are required to file.") 
